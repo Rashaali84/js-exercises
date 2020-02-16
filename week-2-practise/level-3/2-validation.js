@@ -6,7 +6,9 @@
 
 var excludedNums = [6, 14, 91, 111];
 
-function validate(num) {}
+function validate(num) {
+  return (!isNaN(num) && Number.isInteger(num) && !(excludedNums.includes(num)) ? true : false);
+}
 
 console.log(validate(6));
 console.log(validate(10.5));
@@ -14,7 +16,7 @@ console.log(validate(101));
 console.log(validate(-91));
 console.log(validate("16"));
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   false

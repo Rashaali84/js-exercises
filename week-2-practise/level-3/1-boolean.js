@@ -3,7 +3,7 @@
 // What was wrong with the original code?
 // Leave comments above your changes to explain
 
-var isHappy = "false";
+var isHappy = false;
 
 if (isHappy == true) {
   console.log("I am happy");
@@ -11,7 +11,7 @@ if (isHappy == true) {
   console.log("I am not happy");
 }
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   I am not happy

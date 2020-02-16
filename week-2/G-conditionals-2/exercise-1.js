@@ -7,7 +7,8 @@
 */
 
 function negativeOrPositive(number) {
-
+  let res = Math.sign(number);
+  return res >= 0 ? "Positive" : "negative";
 }
 
 /* 
@@ -21,7 +22,7 @@ console.log(number1 + " is " + negativeOrPositive(number1));
 console.log(number2 + " is " + negativeOrPositive(number2));
 console.log(number3 + " is " + negativeOrPositive(number3));
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   5 is positive

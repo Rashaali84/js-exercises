@@ -5,7 +5,9 @@
 // - insert the replacement value at the provided index
 
 function replace(arr, index, value) {
-  return; // complete this statement
+  let newArr = arr.slice(0);
+  newArr[index] = value;// complete this statement
+  return newArr;
 }
 
 /* 
@@ -22,7 +24,7 @@ console.log(newNumbers);
 console.log(names);
 console.log(newNames);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [1, 3, 3]

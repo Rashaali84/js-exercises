@@ -5,12 +5,14 @@
   If Daniel is a mentor, print out "Hi, I'm Daniel, I'm a mentor."
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
-
-var name = "Daniel";
-var danielsRole = "mentor";
-
-/* 
+function call() {
+  var name = "Daniel";
+  var danielsRole = "mentor";
+  return danielsRole === 'mentor' ? "Hi, I'm Daniel, I'm a mentor." : "Hi, I'm Daniel, I'm a student.";
+}
+/*
 EXPECTED RESULT
 ---------------
 Hi, I'm Daniel, I'm a mentor.
 */
+console.log(call());
