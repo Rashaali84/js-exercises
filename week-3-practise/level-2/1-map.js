@@ -11,11 +11,16 @@ var londonLocations = [
   ["Tower bridge", "tube", "bus"],
   ["Greenwich", "tube", "bus", "river boat"]
 ];
-
-var locationsByBoat;
-
-console.log(locationsByBoat);
-
+var newArr = [];
+var locationsByBoat = londonLocations.map(
+  function (subarray) {
+    return subarray.map(
+      function (strValue) {
+        strValue.includes("boat") ? newArr.push(subarray[0]) : '';
+      });
+  }
+);
+console.log(newArr);
 /* EXPECTED OUTPUT
 ["London bridge", "Greenwich"]
 */

@@ -6,7 +6,10 @@
 // - return a new array with the replacement value inserted
 
 function replace(arr, valueToReplace, newValue) {
-  return; // complete this statement
+  let index = arr.indexOf(valueToReplace);
+  newArr = arr.map(x => x);
+  newArr[index] = newValue;
+  return newArr; // complete this statement
 }
 
 /* 
@@ -23,7 +26,7 @@ console.log(newNumbers);
 console.log(names);
 console.log(newNames);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [1, 3, 3]

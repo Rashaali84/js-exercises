@@ -42,7 +42,17 @@ Expected Result:
 PasswordValidationResult=  [false, false, false, false, true]
 
 */
+function PasswordValidationResult(password) {
+    var validPass = [];
+    password.forEach(function (element) {
+
+        validPass.push((element.length >= 5 && element.match(/[A-Z]+/) && element.match(/[0-9]+/) && element.match(/[a-z]+/) && element.match(/[$@#&!%.]+/)) ? true : false);
+
+    });
+    return validPass;
+}
+
 
 var password = ["Se%5", "TktE.TJTU", "384HsHF", "dvyyeyY!5", "tryT3729."];
 
-console.log(PasswordValidationResult)
+console.log(PasswordValidationResult(password));

@@ -13,10 +13,17 @@ var attendances = [
   ["Tayoa", 11],
   ["Nina", 10]
 ];
+var newArr = [];
+var eligibleStudentNames = attendances.map(function (subarray) {
+  return subarray.map(
+    function (strValue) {
+      if (subarray[1] >= 8)
+        if (!newArr.includes(subarray[0]))
+          newArr.push(subarray[0]);
+    });
+}); // TODO: Complete this line.
 
-var eligibleStudentNames; // TODO: Complete this line.
-
-console.log(eligibleStudentNames);
+console.log(newArr);
 
 /* expected output
 [ 'Ahmed', 'Clement', 'Tayoa', 'Nina' ]
